@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:background="@drawable/carbar" />
+
+    <FrameLayout
+        android:id="@+id/picture"
+        android:layout_width="150dp"
+        android:layout_height="110dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp">
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:background="@drawable/carbar"
+            android:clipToOutline="true"/>
+        <TextView
+            android:id="@+id/availability"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="Available"
+            android:textSize="10sp"
+            android:fontFamily="@font/league_spartan"
+            android:paddingVertical="2dp"
+            android:textColor="@color/white"
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:background="@color/off_black"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/picture"
+        android:text="Rp XXX.XXX/day"
+        android:fontFamily="@font/league_spartan"
+        android:textSize="13sp"
+        android:layout_marginHorizontal="13dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_price"
+        android:layout_marginHorizontal="13dp"
+        android:text="Car Name"
+        android:textSize="10sp"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/off_grey"/>
+
+    <TextView
+        android:id="@+id/trim"
+        android:layout_below="@id/car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="5dp"
+        android:text="Trim"
+        android:textSize="10sp"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/off_grey"/>
+
+    <TextView
+        android:id="@+id/trans"
+        android:layout_toEndOf="@id/trim"
+        android:layout_below="@id/car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Transmission"
+        android:textSize="10sp"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/off_grey"/>
+
+    <TextView
+        android:id="@+id/insurance"
+        android:layout_below="@id/trim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="5dp"
+        android:text="RENTER'S INSURANCE AVAILABLE"
+        android:textSize="10sp"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/off_grey"/>
+
+    <TextView
+        android:id="@+id/address_car"
+        android:layout_below="@id/insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginEnd="5dp"
+        android:text="Address"
+        android:textSize="10sp"
+        android:fontFamily="@font/alata"
+        android:textColor="@color/off_grey"/>
+
+</RelativeLayout>

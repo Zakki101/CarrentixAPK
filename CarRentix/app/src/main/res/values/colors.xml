@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="carrentix_red">#B43737</color>
+    <color name="off_white">#E8E9EB</color>
+    <color name="cream">#E0DFD5</color>
+    <color name="off_black">#293132</color>
+    <color name="off_grey">#4F5165</color>
+    <color name="green">#00CB11</color>
+    <color name="hyperblue">#2C8DFF</color>
+</resources>

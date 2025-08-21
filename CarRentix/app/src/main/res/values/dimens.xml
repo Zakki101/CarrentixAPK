@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="recycler_item_spacing">12dp</dimen> <!-- Between items -->
+    <dimen name="recycler_side_padding">24dp</dimen> <!-- Left & right edge padding -->
+</resources>

@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/off_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Top bar -->
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redtopbar"
+            android:paddingTop="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Rent Car"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/league_spartan"
+                android:textAlignment="center"/>
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Approved Message Section -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/month_pill_default">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="24dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:padding="20dp"
+                            android:src="@drawable/checkmark"
+                            android:background="@drawable/carbar"
+                            android:scaleType="fitCenter"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:clipToOutline="true"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="30sp"
+                            android:fontFamily="@font/league_spartan_bold"
+                            android:text="REQUEST APPROVED"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_marginBottom="20dp"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Payment Method -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/month_pill_default"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginVertical="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:textSize="15sp"
+                            android:paddingStart="12dp"
+                            android:fontFamily="@font/alata"
+                            android:textStyle="bold"
+                            android:text="Payment Method"/>
+
+                        <Spinner
+                            android:id="@+id/paymentMethodSpinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/back_box_rounded"
+                            android:padding="12dp"
+                            android:spinnerMode="dropdown"/>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- ID Upload Section -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/month_pill_default"
+                    android:layout_marginTop="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginVertical="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:textSize="15sp"
+                            android:paddingStart="12dp"
+                            android:fontFamily="@font/alata"
+                            android:textStyle="bold"
+                            android:text="ID Picture"/>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp">
+
+                            <Button
+                                android:id="@+id/uploadIdButton"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:padding="12dp"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/alata"
+                                android:textStyle="bold"
+                                android:text="Please Upload Photo of Your ID"
+                                android:backgroundTint="@color/carrentix_red"/>
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="46dp"
+                                android:padding="9dp"
+                                android:scaleType="fitCenter"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:src="@drawable/plussign" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <!-- Total Fee Breakdown -->
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/month_pill_default"
+                    android:layout_marginTop="5dp"
+                    android:paddingVertical="20dp">
+
+                    <TableLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="24dp">
+
+                        <TableRow>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/alata"
+                                android:textStyle="bold"
+                                android:text="Total Fee"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <RelativeLayout
+                                android:layout_weight="1">
+                                <TextView
+                                    android:id="@+id/rent_fee_label"
+                                    android:layout_width="61dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alata"
+                                    android:text="Rent Fee"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/rent_days"
+                                    android:layout_width="30dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alata"
+                                    android:textAlignment="center"
+                                    android:layout_toEndOf="@id/rent_fee_label"
+                                    android:text="1"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                                <TextView
+                                    android:id="@+id/days"
+                                    android:layout_width="50dp"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/alata"
+                                    android:layout_toEndOf="@id/rent_days"
+                                    android:text="day(s)"
+                                    android:textSize="16sp"
+                                    android:textStyle="bold" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:id="@+id/rentFeeText"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/alata"
+                                android:textStyle="bold"
+                                android:textAlignment="textEnd"
+                                android:text="Rp0"/>
+                        </TableRow>
+
+                        <TableRow>
+                            <TextView
+                                android:id="@+id/insurance_fee_label"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/alata"
+                                android:textStyle="bold"
+                                android:text="Insurance Fee [Refundable]"/>
+                            <TextView
+                                android:id="@+id/insuranceFeeText"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/alata"
+                                android:textStyle="bold"
+                                android:textAlignment="textEnd"
+                                android:text="Rp0"/>
+                        </TableRow>
+
+                        <TableRow android:background="@color/white">
+                            <TextView
+                                android:id="@+id/subtotal_label"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/alata"
+                                android:textStyle="bold"
+                                android:text="Subtotal"/>
+                            <TextView
+                                android:id="@+id/subtotalText"
+                                android:layout_weight="2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/alata"
+                                android:textStyle="bold"
+                                android:textAlignment="textEnd"
+                                android:text="Rp0"/>
+                        </TableRow>
+                    </TableLayout>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Pay Now Button -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backboard"/>
+
+        <Button
+            android:id="@+id/paynow"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="PAY RENT FEE"
+            android:textSize="13sp"
+            android:fontFamily="@font/league_spartan"
+            android:backgroundTint="@color/carrentix_red"/>
+    </FrameLayout>
+
+</FrameLayout>

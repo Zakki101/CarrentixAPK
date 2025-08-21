@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSpinnerStyle" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/back_box_rounded</item>
+        <item name="android:popupBackground">@color/white</item>
+        <item name="android:textColor">@color/carrentix_red</item>
+        <item name="android:fontFamily">@font/league_spartan</item>
+        <item name="android:drawableRight">@drawable/arrow_down</item>
+        <item name="drawableTint">@color/carrentix_red</item>
+    </style>
+</resources>

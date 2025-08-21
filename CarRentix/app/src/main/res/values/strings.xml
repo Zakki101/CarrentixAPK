@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Carrentix - Renter</string>
+    <string name="hintusr"><font size="14">Username, Email or Phone Number</font></string>
+    <string name="hintpass"><font size="14">Password</font></string>
+
+    <string name="hintemail"><font size="14">Email</font></string>
+    <string name="hintphone"><font size="14">Phone Number</font></string>
+    <string name="usernm"><font size="14">Username</font></string>
+    <string name="newpass"><font size="14">Password</font></string>
+    <string name="conpass"><font size="14">Confirm Password</font></string>
+    <string name="requi">Password must contain at least 8 characters, including numbers and capital letters</string>
+
+    <string name="deskdash">TOYOTA AVANZA 2022\n1.5 G A/T\nRENTER\'S INSURANCE AVAILABLE\nCILANDAK, JAKARTA SELATAN</string>
+    <string name="pricedash">Rp475.000,00/day</string>
+    <string name="avail">AVAILABLE NOW</string>
+
+    <string name="tandc">I agree that i will return the vehicle back in it’s original condition and will pay out of my own pocket to return it to it’s original condition if I don’t use Insurance. And I have read the Terms and Condiitons of renting this vehicle</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</string>
+
+    <string-array name="insurance_options">
+        <item>WITH INSURANCE</item>
+        <item>NO INSURANCE</item>
+    </string-array>
+
+</resources>

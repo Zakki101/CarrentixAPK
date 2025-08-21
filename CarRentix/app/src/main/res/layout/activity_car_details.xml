@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/off_black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/redtopbar"
+            android:paddingTop="12dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="Car Details"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/league_spartan"
+                android:textAlignment="center"/>
+
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="24dp">
+
+                <Button
+                    android:id="@+id/back"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@android:color/transparent"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/arrleft"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/month_pill_default">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/carName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/alata"
+                            android:textStyle="bold"
+                            android:text="Toyota Avanza 2022"
+                            android:paddingTop="17dp"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:id="@+id/map"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginTop="2dp"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/location"/>
+
+                            <TextView
+                                android:id="@+id/address"
+                                android:layout_toEndOf="@id/map"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:textSize="14sp"
+                                android:fontFamily="@font/alata"
+                                android:text="Cilandak, Jakarta Selatan"
+                                android:paddingBottom="15dp"/>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/carImage"
+                            android:layout_width="340dp"
+                            android:layout_height="200dp"
+                            android:src="@drawable/avanza"
+                            android:background="@drawable/carbar"
+                            android:scaleType="centerCrop"
+                            android:layout_marginVertical="20dp"
+                            android:layout_marginHorizontal="12dp"
+                            android:clipToOutline="true"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="12dp">
+
+                            <ImageView
+                                android:id="@+id/image"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:padding="5dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/clockfill"/>
+
+                            <TextView
+                                android:id="@+id/availabilityLabel"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="15sp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/alata"
+                                android:textColor="@color/off_black"
+                                android:text="Availabilty"
+                                android:layout_toEndOf="@id/image"/>
+
+                            <TextView
+                                android:id="@+id/availabilityText"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/image"
+                                android:textSize="13sp"
+                                android:paddingBottom="3dp"
+                                android:paddingHorizontal="1dp"
+                                android:fontFamily="@font/alata"
+                                android:textColor="@color/green"
+                                android:text="Currently Available"/>
+
+                            <TextView
+                                android:id="@+id/setmap"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="13sp"
+                                android:padding="3dp"
+                                android:fontFamily="@font/alata"
+                                android:textColor="@color/hyperblue"
+                                android:text="Check on Your Map"
+                                android:layout_alignParentEnd="true"/>
+
+                            <ImageView
+                                android:layout_width="26dp"
+                                android:layout_height="26dp"
+                                android:padding="3dp"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/direction"
+                                android:layout_toStartOf="@id/setmap"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/month_pill_default"
+                    android:layout_marginTop="12dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:paddingTop="12dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/alata"
+                            android:textStyle="bold"
+                            android:text="Price:"/>
+
+                        <TextView
+                            android:id="@+id/priceText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginBottom="18dp"
+                            android:textSize="23sp"
+                            android:fontFamily="@font/alata"
+                            android:textStyle="bold"
+                            android:text="Rp475.000,00/day"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:textSize="14sp"
+                            android:fontFamily="@font/alata"
+                            android:textStyle="bold"
+                            android:text="Description"/>
+
+                        <TextView
+                            android:id="@+id/descriptionText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:textSize="13sp"
+                            android:fontFamily="@font/alata"
+                            android:textStyle="normal"
+                            android:text="@string/lorem"
+                            android:layout_marginBottom="40dp"/>
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="24dp"
+                            android:layout_marginBottom="20dp">
+
+                            <TableRow>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="14sp"
+                                    android:fontFamily="@font/alata"
+                                    android:textStyle="bold"
+                                    android:text="Car Specification:"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:id="@+id/specColour"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:fontFamily="@font/alata"
+                                    android:textStyle="normal"
+                                    android:text="Colour: Black"/>
+
+                                <TextView
+                                    android:id="@+id/specTrim"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:fontFamily="@font/alata"
+                                    android:textStyle="normal"
+                                    android:text="Type: G A/T"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:id="@+id/specCapacity"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:fontFamily="@font/alata"
+                                    android:textStyle="normal"
+                                    android:text="Capacity: 7 People"/>
+
+                                <TextView
+                                    android:id="@+id/specTransmission"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:fontFamily="@font/alata"
+                                    android:textStyle="normal"
+                                    android:text="Transmission: Automatic"/>
+                            </TableRow>
+
+                            <TableRow>
+                                <TextView
+                                    android:id="@+id/specEngine"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:fontFamily="@font/alata"
+                                    android:textStyle="normal"
+                                    android:text="Engine: 1.500 cc 4 Cylinder"/>
+
+                                <TextView
+                                    android:id="@+id/specFuel"
+                                    android:layout_weight="1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="13sp"
+                                    android:fontFamily="@font/alata"
+                                    android:textStyle="normal"
+                                    android:text="Fuel Type: Petrol"/>
+                            </TableRow>
+                        </TableLayout>
+                    </LinearLayout>
+                </FrameLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:gravity="center"
+        android:layout_gravity="bottom">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/backboard"/>
+
+        <Button
+            android:id="@+id/rentbtn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:text="RENT"
+            android:fontFamily="@font/league_spartan"
+            android:backgroundTint="@color/carrentix_red"/>
+    </FrameLayout>
+</FrameLayout>
